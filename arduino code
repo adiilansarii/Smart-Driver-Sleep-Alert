@@ -1,0 +1,35 @@
+#define EYE_SENSOR 2
+#define RELAY_PIN 8
+#define BUZZER_PIN 9
+
+unsigned long lastBlinkTime = 0;
+const unsigned long DROWSY_DELAY = 3000; // 3 seconds
+
+void setup() {
+  pinMode(EYE_SENSOR, INPUT);
+  pinMode(RELAY_PIN, OUTPUT);
+  pinMode(BUZZER_PIN, OUTPUT);
+
+  // Initial safe state
+  digitalWrite(RELAY_PIN, HIGH);   // Motor ON
+  digitalWrite(BUZZER_PIN, LOW);   // Buzzer OFF
+
+  lastBlinkTime = millis();
+}
+
+void loop() {
+  int eyeState = digitalRead(EYE_SENSOR);
+
+  // Blink detected
+  if (eyeState == LOW) {
+    lastBlinkTime = millis();       // Reset timer
+    digitalWrite(RELAY_PIN, HIGH);  // Motor ON
+    digitalWrite(BUZZER_PIN, LOW);  // Buzzer OFF
+  }
+
+  // Drowsiness condition
+  if (millis() - lastBlinkTime >= DROWSY_DELAY) {
+    digitalWrite(RELAY_PIN, LOW);   // Motor OFF
+    digitalWrite(BUZZER_PIN, HIGH); // Alarm ON
+  }
+}
