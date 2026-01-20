@@ -49,9 +49,8 @@ This system detects prolonged eye closure and **responds automatically within se
 ## Project Demonstration
 
 ### Eye-Blink Detection Setup (Glasses)
-<!-- Add image of glasses with eye sensor here -->
-![clagss](https://github.com/user-attachments/assets/372267c2-977b-498b-824b-a3c27a5f7a7f)
-
+<!-- Add image of glasses with eye sensor here -->\
+<img width="546" height="365" alt="Screenshot 2026-01-20 163656" src="https://github.com/user-attachments/assets/372267c2-977b-498b-824b-a3c27a5f7a7f" />
 
 
 ### Final Vehicle Safety Model
