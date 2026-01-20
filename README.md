@@ -1,4 +1,4 @@
-# Smart Driver Drowsiness Detection & Safety System 🚗👓
+# Smart Driver Drowsiness Detection & Safety System
 
 This project is a **hardware-based driver safety system** designed to detect **driver drowsiness using eye-blink inactivity** and prevent accidents by **triggering an alarm and automatically stopping the vehicle motor**.
 
@@ -6,7 +6,7 @@ The system focuses on **real-time detection, low-latency response, and wireless 
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Driver fatigue is one of the major causes of road accidents.  
 Delayed human reaction during drowsiness can lead to severe consequences.
@@ -15,7 +15,7 @@ This system detects prolonged eye closure and **responds automatically within se
 
 ---
 
-## ⚙️ System Overview
+## System Overview
 
 - Continuously monitors eye-blink activity using an IR sensor  
 - Detects drowsiness after **3 seconds of eye inactivity**  
@@ -24,14 +24,7 @@ This system detects prolonged eye closure and **responds automatically within se
 
 ---
 
-## 🧩 Components Used
-
-> 📌 Add clear images of each component inside a `screenshots/` or `images/` folder.
-
 ### Hardware Components
-<!-- Add components image here -->
-![Components](./screenshots/components.png)
-
 - Arduino Nano  
 - IR Eye-Blink Sensor  
 - 433 MHz RF Transmitter & Receiver  
@@ -43,7 +36,7 @@ This system detects prolonged eye closure and **responds automatically within se
 
 ---
 
-## 🏗️ Working Principle
+## Working Principle
 
 1. IR eye-blink sensor continuously tracks eye movement  
 2. If eyes remain closed for **≥ 3 seconds**, drowsiness is detected  
@@ -53,19 +46,22 @@ This system detects prolonged eye closure and **responds automatically within se
 
 ---
 
-## 📸 Project Demonstration
+## Project Demonstration
 
 ### Eye-Blink Detection Setup (Glasses)
 <!-- Add image of glasses with eye sensor here -->
-![Eye Sensor Glasses](./screenshots/eye-glasses.png)
+![WhatsApp Image 2026-01-20 at 4 40 15 PM](https://github.com/user-attachments/assets/c33b099b-efcb-4a71-80e3-19383830ca8e)
+
+
 
 ### Final Vehicle Safety Model
 <!-- Add image of final car setup here -->
-![Final Car Setup](./screenshots/car-setup.png)
+<img width="546" height="365" alt="Screenshot 2026-01-20 163656" src="https://github.com/user-attachments/assets/853a20f6-ffe5-4e60-9bc8-81e3f8acc843" />
+
 
 ---
 
-## ⏱️ Performance Metrics
+## Performance Metrics
 
 - Drowsiness detection delay: **~3 seconds**  
 - Wireless response latency: **< 100 ms**  
@@ -74,7 +70,7 @@ This system detects prolonged eye closure and **responds automatically within se
 
 ---
 
-## 🔌 Circuit Design
+## Circuit Design
 
 - IR sensor connected to Arduino input pins  
 - RF transmitter connected to encoder (HT12E)  
@@ -84,20 +80,9 @@ This system detects prolonged eye closure and **responds automatically within se
 
 ---
 
-## 🚧 Future Improvements
+## Future Improvements
 
 - Camera-based eye tracking for higher accuracy  
 - Adjustable drowsiness threshold  
 - GSM-based alert to emergency contacts  
 - Integration with vehicle dashboard system  
-
----
-
-## 👨‍💻 Author
-
-**Adil Ansari**  
-B.Tech (ECE), Netaji Subhas University of Technology  
-
----
-
-⭐ A practical hardware solution aimed at reducing accidents caused by driver fatigue.
